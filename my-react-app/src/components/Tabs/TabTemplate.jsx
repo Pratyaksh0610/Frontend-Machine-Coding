@@ -1,5 +1,5 @@
 export default function TabTemplate(props) {
-  const { data, setData, tabData } = props;
+  const { data, setData, tabData, error } = props;
   const { tabName, fields } = tabData;
   const handleChange = function (e) {
     const { name, value, checked, type } = e.target;
@@ -33,6 +33,7 @@ export default function TabTemplate(props) {
                 }
                 {...(field.type === "radio" && { value: field.value })}
               />
+              {error[field.name] && <p>{error[field.name]}</p>}
             </div>
           ))}
       </div>
