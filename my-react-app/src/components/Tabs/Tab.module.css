@@ -1,0 +1,15 @@
+.tab{
+    background-color: red;
+    background: red;
+    display:inline;
+    padding:10px;
+    margin:5px;
+    border: 1px solid blue;
+    cursor:pointer;
+}
+
+.parentContainer{
+    background-color: rgba(0,0,0,0.3);
+    width: 400px;
+    height: 400px;
+}
