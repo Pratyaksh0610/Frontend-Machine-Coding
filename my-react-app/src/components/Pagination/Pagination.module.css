@@ -1,0 +1,21 @@
+.parentContainer{
+    background-color: aquamarine;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:10px;
+}
+
+.itemCard{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    background-color: violet;
+    border: 2px solid black;
+}
+
+.itemImg{
+    width:100%;
+    height:100%;
+    object-fit: contain ;
+}
