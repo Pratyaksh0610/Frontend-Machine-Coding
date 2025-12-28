@@ -15,17 +15,18 @@ export default function AutocompleteSearchBar() {
       if (typeof searchText !== "string") {
         throw new Error(`SearchText is not in the form of string`);
       }
+      const trimmedSearchText = searchText.trim().toLowerCase();
       const params = new URLSearchParams({
-        q: searchText,
+        q: trimmedSearchText,
       });
       const getCachedData = JSON.parse(
         sessionStorage.getItem(AUTOCOMPLETE_SEARCH_BAR) || "{}"
       );
       if (
-        searchText !== "" &&
-        Object.keys(getCachedData).includes(searchText)
+        trimmedSearchText !== "" &&
+        Object.keys(getCachedData).includes(trimmedSearchText)
       ) {
-        setrecipeData(getCachedData[searchText]);
+        setrecipeData(getCachedData[trimmedSearchText]);
         return;
       }
       const apiData = await fetch(API_URL_SEARCH + `?${params.toString()}`);
@@ -36,7 +37,7 @@ export default function AutocompleteSearchBar() {
       const response = await apiData.json();
       sessionStorage.setItem(
         AUTOCOMPLETE_SEARCH_BAR,
-        JSON.stringify({ ...getCachedData, [searchText]: response?.recipes })
+        JSON.stringify({ ...getCachedData, [trimmedSearchText]: response?.recipes })
       );
       setrecipeData(response?.recipes);
     } catch (err) {
