@@ -2,13 +2,14 @@ import { useEffect, useRef, useState } from "react";
 import { API_URL_SEARCH } from "../../constants/mockAPI";
 import { debouncedFunction } from "../../utils/helper";
 import styles from "./AutocompleteSearchBar.module.css";
+import { AUTOCOMPLETE_SEARCH_BAR } from "../../constants/autcompleteSearchBarConstants";
 
 export default function AutocompleteSearchBar() {
-  const [recipeData, setrecipeData] = useState(undefined);
+  const [recipeData, setrecipeData] = useState([]);
   const [showRecipeSuggestions, setshowRecipeSuggestions] = useState(false);
   const inputRef = useRef(null);
   const [inputName, setInputName] = useState("");
-  
+
   async function getData(searchText = "") {
     try {
       if (typeof searchText !== "string") {
@@ -17,15 +18,13 @@ export default function AutocompleteSearchBar() {
       const params = new URLSearchParams({
         q: searchText,
       });
-      const getCachedData = await JSON.parse(
+      const getCachedData = JSON.parse(
         sessionStorage.getItem(AUTOCOMPLETE_SEARCH_BAR) || "{}"
       );
-      console.log(getCachedData);
       if (
         searchText !== "" &&
         Object.keys(getCachedData).includes(searchText)
       ) {
-        console.log("<<<<CACHEFOUND", getCachedData);
         setrecipeData(getCachedData[searchText]);
         return;
       }
@@ -47,7 +46,7 @@ export default function AutocompleteSearchBar() {
     }
   }
 
-  const handeleDebouncedSearch = debouncedFunction(getData, 0);
+  const handeleDebouncedSearch = debouncedFunction(getData, 300);
   useEffect(() => {
     function handlePointerDown(e) {
       if (inputRef.current && !inputRef.current.contains(e.target)) {
@@ -87,7 +86,10 @@ export default function AutocompleteSearchBar() {
                 <p
                   key={idx}
                   className={styles.recipe}
-                  onClick={() => setInputName(recipe.name)}
+                  onClick={() => {
+                    setInputName(recipe.name);
+                    setshowRecipeSuggestions(false);
+                  }}
                 >
                   {recipe.name}
                 </p>
