@@ -1,15 +1,16 @@
-import './App.css'
-import Pagination from './components/Pagination/Pagination'
-import Tab from './components/Tabs/Tab'
+import "./App.css";
+import AutocompleteSearchBar from "./components/AutocompleteSearchBar/AutocompleteSearchBar";
+// import Pagination from './components/Pagination/Pagination'
+// import Tab from './components/TabsForm/Tab'
 
 function App() {
-
   return (
     <>
-    {/* <Tab/> */}
-    <Pagination/>
+      {/* <Tab/> */}
+      {/* <Pagination/> */}
+      <AutocompleteSearchBar />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

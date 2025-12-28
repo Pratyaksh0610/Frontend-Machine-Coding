@@ -1,0 +1,26 @@
+p{
+    margin:0;
+    padding:0;
+}
+
+.inputContainer{
+    border: 2px solid aquamarine;
+}
+
+
+.recipeContainer {
+    /* max-height: 100px; */
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+.recipe{
+    border-bottom: 1px solid black;
+    padding: 5px 0px 0px 5px;
+    color: rgb(1,1,1,0.5);
+}
+
+.recipe:hover{
+    background-color: rgb(1,1,1,0.1);
+    cursor: pointer;
+}
