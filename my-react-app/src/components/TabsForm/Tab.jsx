@@ -1,7 +1,7 @@
 import { useState } from "react";
-import tabConfig from "../../constants/tabConstants";
 import styles from "./Tab.module.css";
 import TabTemplate from "./TabTemplate";
+import tabConfig from "../../constants/componentConstants";
 
 export default function Tab() {
   const [activeTab, setActiveTab] = useState(0);

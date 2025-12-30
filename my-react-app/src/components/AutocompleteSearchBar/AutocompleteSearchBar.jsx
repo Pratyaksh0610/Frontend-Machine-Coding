@@ -1,8 +1,7 @@
 import { useEffect, useRef, useState } from "react";
-import { API_URL_SEARCH } from "../../constants/mockAPI";
 import { debouncedFunction } from "../../utils/helper";
 import styles from "./AutocompleteSearchBar.module.css";
-import { AUTOCOMPLETE_SEARCH_BAR } from "../../constants/autcompleteSearchBarConstants";
+import { API_URL_SEARCH, AUTOCOMPLETE_SEARCH_BAR } from "../../constants/componentConstants";
 
 export default function AutocompleteSearchBar() {
   const [recipeData, setrecipeData] = useState([]);

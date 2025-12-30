@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
-import { API_URL_PRODUCTS } from "../../constants/mockAPI";
 import ItemCard from "./ItemCard";
 import styles from "./Pagination.module.css";
-import { PAGE_SIZE_LIMIT } from "../../constants/paginationConstants";
+import { API_URL_PRODUCTS, PAGE_SIZE_LIMIT } from "../../constants/componentConstants";
 
 export default function Pagination() {
   const [productsData, setproductsData] = useState([]);
