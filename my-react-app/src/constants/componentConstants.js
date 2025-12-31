@@ -88,10 +88,12 @@ export const FileStructureData = [
   {
     name: "gradfather",
     isFolder: true,
+    id: 1,
     children: [
       {
         name: "parent",
         isFolder: true,
+        id: 2,
         children: [
           {
             name: "son",
@@ -106,6 +108,7 @@ export const FileStructureData = [
           {
             name: "daughter",
             isFolder: true,
+            id: 3,
             children: [
               {
                 name: "srcFile",
@@ -120,28 +123,34 @@ export const FileStructureData = [
   {
     name: "gradMother",
     isFolder: true,
+    id: 4,
     children: [
       {
         name: "parent",
         isFolder: true,
+        id: 5,
         children: [
           {
             name: "son",
             isFolder: true,
+            id: 6,
             children: [
               {
                 name: "srcFile",
                 isFolder: false,
+                children: [],
               },
             ],
           },
           {
             name: "daughter",
             isFolder: true,
+            id: 7,
             children: [
               {
                 name: "srcFile",
                 isFolder: false,
+                children: [],
               },
             ],
           },
