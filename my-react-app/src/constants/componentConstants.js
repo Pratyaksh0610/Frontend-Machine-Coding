@@ -102,6 +102,7 @@ export const FileStructureData = [
               {
                 name: "srcFile",
                 isFolder: false,
+                children: []
               },
             ],
           },
@@ -113,6 +114,7 @@ export const FileStructureData = [
               {
                 name: "srcFile",
                 isFolder: false,
+                children: []
               },
             ],
           },
