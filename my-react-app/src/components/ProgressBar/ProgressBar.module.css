@@ -23,7 +23,8 @@
     transform: translate(-50%,-50%);
 }
 
-*{
+/* //This will apply to entire page as CSS seedha load hoga poore page ke liye aur tb ye poore doc ko select krlega */
+/* *{
     margin:0;
     padding:0;
-}
+} */

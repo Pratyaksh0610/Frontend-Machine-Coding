@@ -1,0 +1,24 @@
+.otpInput{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background-color: beige;
+    border: 0.125px solid black;
+}
+
+.otpInput:first-child{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.otpInput:last-child{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.otpInput:focus{
+    z-index:1;
+    position: relative;
+    outline: 1px solid aquamarine
+}
+
