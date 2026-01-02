@@ -102,7 +102,7 @@ export const FileStructureData = [
               {
                 name: "srcFile",
                 isFolder: false,
-                children: []
+                children: [],
               },
             ],
           },
@@ -114,7 +114,7 @@ export const FileStructureData = [
               {
                 name: "srcFile",
                 isFolder: false,
-                children: []
+                children: [],
               },
             ],
           },
@@ -152,6 +152,89 @@ export const FileStructureData = [
               {
                 name: "srcFile",
                 isFolder: false,
+                children: [],
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+];
+
+export const CheckboxData = [
+  {
+    name: "gradfather",
+    id: 1,
+    isChecked: false,
+    children: [
+      {
+        name: "parent",
+        isChecked: false,
+        id: 2,
+        children: [
+          {
+            name: "son",
+            id:3,
+            isChecked: false,
+            children: [
+              {
+                name: "srcFile",
+                id:4,
+                isChecked: false,
+                children: [],
+              },
+            ],
+          },
+          {
+            name: "daughter",
+            isChecked: false,
+            id: 5,
+            children: [
+              {
+                name: "srcFile",
+                id:6,
+                isChecked: false,
+                children: [],
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "gradMother",
+    isChecked: false,
+    id: 7,
+    children: [
+      {
+        name: "parent",
+        isChecked: false,
+        id: 8,
+        children: [
+          {
+            name: "son",
+            isChecked: false,
+            id: 9,
+            children: [
+              {
+                name: "srcFile",
+                isChecked: false,
+                id: 10,
+                children: [],
+              },
+            ],
+          },
+          {
+            name: "daughter",
+            isChecked: false,
+            id: 11,
+            children: [
+              {
+                name: "srcFile",
+                id:12,
+                isChecked: false,
                 children: [],
               },
             ],
