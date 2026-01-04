@@ -1,4 +1,5 @@
 import "./App.css";
+import Accordion from "./components/Accordion/Accordion";
 import AutocompleteSearchBar from "./components/AutocompleteSearchBar/AutocompleteSearchBar";
 import FileExplorer from "./components/FileExplorer/FileExplorer";
 import FileStructure from "./components/FileExplorer/FileStructure";
@@ -20,7 +21,8 @@ function App() {
       {/* <ProgressBar progress={80}/> */}
       {/* <OTPInput inputSize={5} /> */}
       {/* <NestedCheckbox data={CheckboxData} /> */}
-      <TodoList/>
+      {/* <TodoList/> */}
+      <Accordion/>
     </>
   );
 }
