@@ -31,6 +31,18 @@ export default function EmployeeDBMS() {
       <button onClick={() => setshowEmployeeForm((prev) => !prev)}>
         Add Employee
       </button>
+      {/* <div
+        style={{
+          position: "absolute",
+          width: "100vw",
+          height: "100vh",
+          backgroundColor: "red",
+          opacity: "0.2",
+          zIndex: "0",
+          top: "0",
+          left: "0",
+        }}
+      /> */}
       {showEmployeeForm && (
         <EmployeeForm
           setShowForm={setshowEmployeeForm}
@@ -103,7 +115,7 @@ function EmployeeForm({ setShowForm, setData }) {
     <>
       <div
         style={{
-          position: "fixed",
+          position: "absolute",
           width: "100vw",
           height: "100vh",
           backgroundColor: "red",
