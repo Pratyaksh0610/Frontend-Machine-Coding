@@ -1,0 +1,30 @@
+.employeeItem{
+    background-color: rgb(0,0,0,0.1);
+    border-radius: 2px;
+    margin: 5px 0px;
+    font-size: clamp(12px, 2vw, 32px );
+    display:flex;
+    flex-direction:row;
+    /* text-align:center; */
+}
+
+.listContainer{
+    width: 120px;
+    height: 100px;
+    overflow: auto;
+}
+
+.parentContainer{
+    display:flex;
+    width: 100%;
+    flex-direction : row;
+    justify-content: space-between;
+}
+
+.employeeForm{
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

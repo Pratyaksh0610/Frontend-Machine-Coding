@@ -244,3 +244,48 @@ export const CheckboxData = [
     ],
   },
 ];
+
+export const EmployeeData = [
+  {
+    name: "Thomas",
+    address: "Delhi",
+    Mobile: 418494838,
+    DOB: "2026-01-08T07:30:00.000Z",
+    id:1
+  },
+  {
+    name: "David",
+    address: "Delhi",
+    Mobile: 418494838,
+    DOB: "2026-01-08T07:30:00.000Z",
+    id:2
+  },
+  {
+    name: "Ravidas",
+    address: "Delhi",
+    Mobile: 418494838,
+    DOB: "2026-01-08T07:30:00.000Z",
+    id:3
+  },
+  {
+    name: "Ren",
+    address: "Delhi",
+    Mobile: 418494838,
+    DOB: "2026-01-08T07:30:00.000Z",
+    id:4
+  },
+  {
+    name: "Ravidas",
+    address: "Delhi",
+    Mobile: 418494838,
+    DOB: "2026-01-08T07:30:00.000Z",
+    id:5
+  },
+  {
+    name: "Ren",
+    address: "Delhi",
+    Mobile: 418494838,
+    DOB: "2026-01-08T07:30:00.000Z",
+    id:6
+  },
+]

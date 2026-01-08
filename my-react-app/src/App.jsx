@@ -1,6 +1,7 @@
 import "./App.css";
 import Accordion from "./components/Accordion/Accordion";
 import AutocompleteSearchBar from "./components/AutocompleteSearchBar/AutocompleteSearchBar";
+import EmployeeDBMS from "./components/EmployeeDBMS/EmployeeDBMS";
 import FileExplorer from "./components/FileExplorer/FileExplorer";
 import FileStructure from "./components/FileExplorer/FileStructure";
 import NestedCheckbox from "./components/NestedCheckbox/NestedCheckbox";
@@ -22,7 +23,8 @@ function App() {
       {/* <OTPInput inputSize={5} /> */}
       {/* <NestedCheckbox data={CheckboxData} /> */}
       {/* <TodoList/> */}
-      <Accordion/>
+      {/* <Accordion/> */}
+      <EmployeeDBMS/>
     </>
   );
 }
