@@ -1,6 +1,7 @@
 import "./App.css";
 import Accordion from "./components/Accordion/Accordion";
 import AutocompleteSearchBar from "./components/AutocompleteSearchBar/AutocompleteSearchBar";
+import EMICalculator from "./components/EMICalculator/EMICalculator";
 import EmployeeDBMS from "./components/EmployeeDBMS/EmployeeDBMS";
 import FileExplorer from "./components/FileExplorer/FileExplorer";
 import FileStructure from "./components/FileExplorer/FileStructure";
@@ -24,7 +25,8 @@ function App() {
       {/* <NestedCheckbox data={CheckboxData} /> */}
       {/* <TodoList/> */}
       {/* <Accordion/> */}
-      <EmployeeDBMS/>
+      {/* <EmployeeDBMS/> */}
+      <EMICalculator/>
     </>
   );
 }
