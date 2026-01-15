@@ -7,6 +7,7 @@ import FileExplorer from "./components/FileExplorer/FileExplorer";
 import FileStructure from "./components/FileExplorer/FileStructure";
 import NestedCheckbox from "./components/NestedCheckbox/NestedCheckbox";
 import OTPInput from "./components/OTPInput/otpInput";
+import PasswordGenerator from "./components/PasswordGenerator/PasswordGenerator";
 import ProgressBar from "./components/ProgressBar/ProgressBar";
 import TodoList from "./components/TodoList/TodoList";
 import { CheckboxData, FileStructureData } from "./constants/componentConstants";
@@ -26,7 +27,8 @@ function App() {
       {/* <TodoList/> */}
       {/* <Accordion/> */}
       {/* <EmployeeDBMS/> */}
-      <EMICalculator/>
+      {/* <EMICalculator/> */}
+      <PasswordGenerator/>
     </>
   );
 }

@@ -175,12 +175,12 @@ export const CheckboxData = [
         children: [
           {
             name: "son",
-            id:3,
+            id: 3,
             isChecked: false,
             children: [
               {
                 name: "srcFile",
-                id:4,
+                id: 4,
                 isChecked: false,
                 children: [],
               },
@@ -193,7 +193,7 @@ export const CheckboxData = [
             children: [
               {
                 name: "srcFile",
-                id:6,
+                id: 6,
                 isChecked: false,
                 children: [],
               },
@@ -233,7 +233,7 @@ export const CheckboxData = [
             children: [
               {
                 name: "srcFile",
-                id:12,
+                id: 12,
                 isChecked: false,
                 children: [],
               },
@@ -251,41 +251,57 @@ export const EmployeeData = [
     address: "Delhi",
     Mobile: 418494838,
     DOB: "2026-01-08T07:30:00.000Z",
-    id:1
+    id: 1
   },
   {
     name: "David",
     address: "Delhi",
     Mobile: 418494838,
     DOB: "2026-01-08T07:30:00.000Z",
-    id:2
+    id: 2
   },
   {
     name: "Ravidas",
     address: "Delhi",
     Mobile: 418494838,
     DOB: "2026-01-08T07:30:00.000Z",
-    id:3
+    id: 3
   },
   {
     name: "Ren",
     address: "Delhi",
     Mobile: 418494838,
     DOB: "2026-01-08T07:30:00.000Z",
-    id:4
+    id: 4
   },
   {
     name: "Ravidas",
     address: "Delhi",
     Mobile: 418494838,
     DOB: "2026-01-08T07:30:00.000Z",
-    id:5
+    id: 5
   },
   {
     name: "Ren",
     address: "Delhi",
     Mobile: 418494838,
     DOB: "2026-01-08T07:30:00.000Z",
-    id:6
+    id: 6
   },
 ]
+
+export const inputMapping = {
+  upperCase: "upperCase",
+  lowerCase: "lowerCase",
+  numbers: "numbers",
+  symbols: "symbols",
+};
+
+export const symbols = "!@#$%^&*-=+_`~[]{},./";
+
+export const alphabets = Array.from({ length: 26 }, (_, idx) => {
+  return String.fromCharCode(65 + idx);
+});
+export const numbers = Array.from({ length: 10 }, (_, idx) => {
+  return idx;
+});
