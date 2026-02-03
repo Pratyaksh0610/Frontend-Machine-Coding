@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Async vs Defer (Guaranteed Difference)</title>
+
+  <!-- Toggle async ↔ defer here -->
+  <script src="normal.js" async></script>
+</head>
+
+<body>
+  <!-- BIG DOM to slow parsing -->
+  <div id="container"></div>
+
+  <script>
+    const container = document.getElementById("container");
+
+    for (let i = 0; i < 2000000; i++) {
+      const p = document.createElement("p");
+      p.textContent = "Line " + i;
+      container.appendChild(p);
+    }
+    console.log("Inline script finished building DOM");
+  </script>
+</body>
+</html>
