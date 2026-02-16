@@ -1,12 +1,14 @@
-import './App.css'
+import "./App.css";
+import GridLights from "./components/GridQuestions/GridLights/GridLights";
+import MemoizedComponent from "./components/MemoizedComponent/MemoizedComponent";
 
 function App() {
-
   return (
-    <div>
-      <h1 style={{color:'red'}}>Hello</h1>
-    </div>
-  )
+    <>
+      {/* <GridLights /> */}
+      <MemoizedComponent/>
+    </>
+  );
 }
 
-export default App
+export default App;

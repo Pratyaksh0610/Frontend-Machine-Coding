@@ -1,3 +1,8 @@
-body{
-  background-color: black;
+:root {
+  --font-primary: Saira, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-primary);
 }
